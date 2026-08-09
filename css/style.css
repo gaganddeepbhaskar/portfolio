@@ -471,7 +471,8 @@ section { position: relative; }
   overflow: hidden;
 }
 .card-media video, .card-media img { width: 100%; height: 100%; object-fit: cover; }
-.card-media .no-media {
+.card-media .no-media,
+.modal-media .no-media {
   width: 100%; height: 100%;
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-mono);

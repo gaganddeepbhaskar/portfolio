@@ -260,6 +260,8 @@ function initProjects() {
     } else if (p.poster) {
       mediaHtml = `<img src="${p.poster}" alt="${escapeHtml(p.name)}"
         style="width:100%;height:420px;object-fit:contain;background:#0d0e12;border-radius:4px;display:block;">`;
+    } else {
+      mediaHtml = `<div class="no-media">${escapeHtml(p.kicker || "No media available")}</div>`;
     }
 
     if (p.extraImage) {
